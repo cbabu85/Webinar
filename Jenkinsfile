@@ -3,24 +3,24 @@ pipeline {
      stages {
        stage('Pullcode') {
          steps {
-             git 'https://github.com/up1/workshop-java-web-tdd.git'
+             git 'https://github.com/cbabu85/Webinar.git'
          }
        }
        stage('Testing') {
           steps {
-            sh "clean test"
+            sh 'mvn clean test'
             junit 'target/surefire-reports/*.xml'
           }
         }
         stage('Code coverage') {
           steps {
-             sh "cobertura:cobertura"
+             sh 'mvn cobertura:cobertura'
              cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**/target/site/cobertura/coverage.xml', failUnhealthy: false, failUnstable: false
           }
         }
         stage('Package') {
           steps { 
-            sh "package -DskipTests=true"
+            sh 'mvn package -DskipTests=true'
           }
         }
       }
