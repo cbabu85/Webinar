@@ -8,19 +8,19 @@ pipeline {
        }
        stage('Testing') {
           steps {
-            sh 'mvn clean test'
+            sh 'clean test'
             junit 'target/surefire-reports/*.xml'
           }
         }
         stage('Code coverage') {
           steps {
-             sh 'mvn cobertura:cobertura'
+             sh 'cobertura:cobertura'
              cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**/target/site/cobertura/coverage.xml', failUnhealthy: false, failUnstable: false
           }
         }
         stage('Package') {
           steps { 
-            sh 'mvn package -DskipTests=true'
+            sh 'package -DskipTests=true'
           }
         }
       }
