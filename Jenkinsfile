@@ -16,12 +16,12 @@ pipeline {
             junit 'target/surefire-reports/*.xml'
           }
         }
-        stage('Code coverage') {
-          steps {
-             sh 'mvn cobertura:cobertura'
-             cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**/target/site/cobertura/coverage.xml', failUnhealthy: false, failUnstable: false
-          }
-        }
+        //stage('Code coverage') {
+        //  steps {
+        //     sh 'mvn cobertura:cobertura'
+        //     cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**/target/site/cobertura/coverage.xml', failUnhealthy: false, failUnstable: false
+       //   }
+       // }
         stage('Package') {
           steps { 
             sh 'mvn package -DskipTests=true'
