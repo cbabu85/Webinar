@@ -15,6 +15,16 @@ pipeline {
              sh 'mvn compile'
          }
        }
+       stage('SonarQube Analysis') {
+		environment {
+                scannerHome = tool 'SonarScanner'
+                 }
+          steps {
+                  withSonarQubeEnv('SonarCloud') {
+                  sh "${scannerHome}/bin/sonar-scanner"
+                }
+ 		}
+	}   
        stage('Testing') {
           steps {
             sh 'mvn clean test'
