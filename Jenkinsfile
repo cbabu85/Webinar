@@ -10,7 +10,6 @@ pipeline {
              git 'https://github.com/cbabu85/Webinar.git'
          }
        }
-       stages {
        stage('Compile') {
          steps {
              sh 'mvn compile'
