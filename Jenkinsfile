@@ -28,8 +28,8 @@ pipeline {
           }
         }
       }
-      post {
-        always {
+      stage('Deploy to Tomcat')
+        steps {
            deploy adapters: [tomcat8(credentialsId: 'deployer_user', path: '', url: 'http://ec2-3-144-112-99.us-east-2.compute.amazonaws.com:8080/')], contextPath: null, onFailure: false, war: 'demo.war'
         }
       }
