@@ -1,0 +1,539 @@
+1
+00:00:00,750 --> 00:00:04,080
+Now we've understood what Kuberenets is and how it works.
+
+2
+00:00:04,500 --> 00:00:08,280
+Let us now go ahead and understand Azure Kubernetes Service.
+
+3
+00:00:09,000 --> 00:00:12,230
+Now to give you a brief about Azure Kubernetes Service.
+
+4
+00:00:12,240 --> 00:00:14,730
+As I've already mentioned, it is a Kubernetes Service.
+
+5
+00:00:14,730 --> 00:00:18,930
+that is hosted on the Azure cloud platform.
+
+6
+00:00:18,990 --> 00:00:24,330
+OK, so let me just explain that again so that we can go ahead and understand
+ 
+7
+00:00:24,330 --> 00:00:27,310
+how working of Azure Kubernetes happens.
+
+8
+00:00:28,140 --> 00:00:32,490
+So we've already Seen this slide, what is Azure Kubernetes Service?
+
+9
+00:00:32,490 --> 00:00:34,710
+But now that would make a lot more sense for you.
+
+10
+00:00:34,770 --> 00:00:35,100
+OK.
+
+11
+00:00:35,400 --> 00:00:39,120
+So what can happen or what Azure Kubernetes service offers to you?
+
+12
+00:00:39,120 --> 00:00:41,430
+Do you talk about Azure to start with?
+
+13
+00:00:41,520 --> 00:00:43,890
+It is a popular cloud service provider.
+
+14
+00:00:44,520 --> 00:00:49,220
+What that means is with Azure Kubernetes, or with Microsoft Azure.
+
+15
+00:00:49,230 --> 00:00:55,610
+You can basically have various services that help you in software development, planning, management,
+
+16
+00:00:55,620 --> 00:00:56,010
+right?
+
+17
+00:00:56,370 --> 00:01:01,020
+Be it your administrative practices, development practices or architectural practices related to software.
+
+18
+00:01:01,320 --> 00:01:07,260
+All these things can be hosted on a public server in this case, which again can be on Microsoft Azure
+
+19
+00:01:07,260 --> 00:01:07,560
+Cloud.
+
+20
+00:01:07,920 --> 00:01:13,530
+Now what it does is it basically gives you all these services that are needed to carry out all the actions
+
+21
+00:01:13,530 --> 00:01:19,440
+that I just mentioned where you can rent these resources or follow up as you go, model and use these
+
+22
+00:01:19,440 --> 00:01:21,600
+services to benefit your requirement.
+
+23
+00:01:21,810 --> 00:01:22,140
+OK.
+
+24
+00:01:22,500 --> 00:01:27,210
+Now, when you talk about a platform like Microsoft Azure, which again is a cloud platform, as I've
+
+25
+00:01:27,210 --> 00:01:32,330
+just mentioned, the possibility of dealing with applications are plenty.
+
+26
+00:01:32,400 --> 00:01:33,630
+or the possibilities rather
+
+27
+00:01:33,630 --> 00:01:36,600
+are plenty, so you can do so many things.
+
+28
+00:01:37,020 --> 00:01:44,400
+So what that does is that gives developers or application owners options to work with these applications
+
+29
+00:01:44,400 --> 00:01:45,450
+in numerous ways.
+
+30
+00:01:45,600 --> 00:01:45,900
+Okay.
+
+31
+00:01:46,350 --> 00:01:48,830
+It simplifies their complications, right?
+
+32
+00:01:48,840 --> 00:01:51,270
+Since you are talking about a platform like Microsoft Azure.
+
+33
+00:01:51,570 --> 00:01:58,870
+It helps you basically orchestrate quite a lot of activities be it managing your servers, infrastructure,
+
+34
+00:01:58,870 --> 00:01:59,060
+right?
+
+35
+00:01:59,380 --> 00:02:02,610
+Be it load balancing, auto scaling.
+
+36
+00:02:02,610 --> 00:02:05,790
+All these things can be controlled by using the cloud platform.
+
+37
+00:02:06,390 --> 00:02:11,400
+So what that does is that gives developers the added benefit or the application owners.
+
+38
+00:02:11,400 --> 00:02:16,950
+This added benefit and that is why what these cloud platforms are doing these days is they are encroaching
+
+39
+00:02:16,950 --> 00:02:18,500
+or basically covering different domains?
+
+40
+00:02:18,510 --> 00:02:21,390
+Be it your big data or DevOps analytics etc.
+
+41
+00:02:21,390 --> 00:02:25,140
+All these things are or can be implemented using these platforms.
+
+42
+00:02:25,380 --> 00:02:30,600
+Because when you talk about this cloud platforms, they are already owning various markets of software
+
+43
+00:02:30,600 --> 00:02:32,190
+development and application hosting.
+
+44
+00:02:32,280 --> 00:02:32,580
+OK.
+
+45
+00:02:33,030 --> 00:02:39,630
+So that is why having something like Kubernetes work on top of Azure is a benefit way, because some
+
+46
+00:02:39,630 --> 00:02:45,870
+of the complications that you would find difficult to implement using Kubernetes, can be controlled
+
+47
+00:02:45,870 --> 00:02:47,790
+by using Microsoft Azure.
+
+48
+00:02:47,820 --> 00:02:52,970
+And that is why you have these added benefits be it your end to end deployment,
+
+49
+00:02:52,980 --> 00:02:55,110
+be it your availability or scalability.
+
+50
+00:02:55,710 --> 00:03:02,400
+If you talk about some of the benefits that it actually offers, what it does is you pay only for the
+
+51
+00:03:02,400 --> 00:03:03,630
+node that you use.
+
+52
+00:03:03,630 --> 00:03:08,870
+That means last time I checked, Microsoft Azure did not charge you for your master node.
+
+53
+00:03:09,360 --> 00:03:12,210
+You only get charged for your work nodes that you used.
+
+54
+00:03:12,360 --> 00:03:17,400
+OK, your cluster upgrades are easier, so you do not have to worry about the patching part and stuff
+
+55
+00:03:17,400 --> 00:03:17,820
+like that.
+
+56
+00:03:18,330 --> 00:03:23,460
+Integration with various azure and other tools and services becomes easier.
+
+57
+00:03:23,820 --> 00:03:29,970
+Not just that, what you can also do is you can actually go and enforce various roles that are under
+
+58
+00:03:29,970 --> 00:03:34,020
+Azure policy across multiple clusters to have uniformity.
+
+59
+00:03:34,020 --> 00:03:41,220
+If you need to right? what, you can also do is you can scale Kubernetes and other nodes using autoscaler
+
+60
+00:03:41,460 --> 00:03:49,230
+that Microsoft Azure support, and you can even expand your scale even greater by scheduling your containers
+
+61
+00:03:49,230 --> 00:03:50,520
+on Azure containers.
+
+62
+00:03:50,880 --> 00:03:55,500
+So that is what Microsoft Azure Kubernetes Service provides you with.
+
+63
+00:03:55,740 --> 00:03:56,030
+Okay.
+
+64
+00:03:56,640 --> 00:04:01,650
+Let us now move further in this Azure Kubernetes Service and let's try and understand
+
+65
+00:04:01,650 --> 00:04:07,830
+some of the other important pointers, like how does the architecture of Azure Kubernetes services
+
+66
+00:04:07,830 --> 00:04:08,220
+works?
+
+67
+00:04:09,550 --> 00:04:14,210
+OK, to understand the working of AKS, or Azure Kubernetes Service, right?
+
+68
+00:04:14,710 --> 00:04:16,340
+You can see this diagram on the screen.
+
+69
+00:04:16,360 --> 00:04:21,460
+It's a fairly simple diagram and tells you what Azure Kubernetes Service does.
+
+70
+00:04:21,490 --> 00:04:26,710
+OK, so we've already seen how Azure Kubernetes architecture works Right?.
+
+71
+00:04:26,710 --> 00:04:30,370
+I mean, we know what all components it has and stuff like that.
+
+72
+00:04:30,400 --> 00:04:32,200
+This is a more detailed view.
+
+73
+00:04:32,620 --> 00:04:35,710
+So what you'll have is you'll have, again, a Kubernetes.
+
+74
+00:04:35,710 --> 00:04:39,240
+master master node or cluster is what you can call it.
+
+75
+00:04:39,260 --> 00:04:39,580
+OK.
+
+76
+00:04:39,970 --> 00:04:43,030
+So in this master node, the functionality would be same.
+
+77
+00:04:43,030 --> 00:04:48,940
+It would be controlling how the deployment and how the management of your containers work.
+
+78
+00:04:49,390 --> 00:04:55,960
+So basically, Azure will manage your master node it will basically help you control quite a few activities
+
+79
+00:04:55,960 --> 00:05:01,750
+that are there as a customer, you'd be managing the applications, only that you won't have support from Microsoft
+
+80
+00:05:01,870 --> 00:05:02,820
+Azure hope you.
+
+81
+00:05:02,830 --> 00:05:09,400
+Understand that now, if you talk about the control plane, what you have here is you have your API server.
+
+82
+00:05:09,400 --> 00:05:16,750
+now when you talk about your API server, what it does is it basically tells you how the underlying
+
+83
+00:05:16,750 --> 00:05:18,880
+Kubernetes APIs are exposed.
+
+84
+00:05:19,180 --> 00:05:19,510
+OK.
+
+85
+00:05:19,960 --> 00:05:25,150
+What this component basically does is it provides the interaction for your management tools be it your
+
+86
+00:05:25,330 --> 00:05:28,920
+Kubectl or the kubernetes dashboard.
+
+87
+00:05:29,410 --> 00:05:30,480
+Similarly, you have your etcd.
+
+88
+00:05:31,360 --> 00:05:36,340
+Now etcd basically what it does is it maintains the state of your kubernetes when I say the
+
+89
+00:05:36,350 --> 00:05:37,120
+state of Kubernetes.
+
+90
+00:05:37,120 --> 00:05:42,610
+I'm talking about the Kubernetes cluster and basically tells you control all the configuration that
+
+91
+00:05:42,610 --> 00:05:47,740
+is, there this thing is highly available and it is key value based in nature.
+
+92
+00:05:47,830 --> 00:05:48,180
+OK.
+
+93
+00:05:48,640 --> 00:05:52,000
+But you also have here is basically have a scheduler.
+
+94
+00:05:52,390 --> 00:05:58,690
+What is scheduler does is it lets you create and scale your applications to basically determine which
+
+95
+00:05:58,690 --> 00:06:01,600
+nodes can run on what workload and stuff like that.
+
+96
+00:06:01,780 --> 00:06:02,080
+OK.
+
+97
+00:06:02,620 --> 00:06:04,920
+And finally, you have the controller manager now.
+
+98
+00:06:04,930 --> 00:06:10,960
+This is an important bit again, what it does is it controls or overseas, a number of smaller controllers,
+
+99
+00:06:11,410 --> 00:06:13,270
+whether they're performing their actions or not.
+
+100
+00:06:13,270 --> 00:06:18,880
+And what it also helps you in doing is replicating the pods that you have and handling your nodal
+
+101
+00:06:18,880 --> 00:06:19,990
+operations as well.
+
+102
+00:06:20,380 --> 00:06:25,330
+So this is what your control plane does, and it is basically managed by Azure.
+
+103
+00:06:25,820 --> 00:06:30,910
+Now what is the benefit of having a Azure managed right since, Azure, is managing it?
+
+104
+00:06:31,210 --> 00:06:34,820
+you dont need to worry about the configuration part setting up part, right?
+
+105
+00:06:35,170 --> 00:06:40,150
+The cluster node is basically set up by Microsoft Azure, and that is what it simplifies.
+
+106
+00:06:40,400 --> 00:06:46,510
+Then the other bit is your customer managed bit, be it your Kubelet, your kube-proxy, your container
+
+107
+00:06:46,600 --> 00:06:49,030
+and container runtime to understand this better.
+
+108
+00:06:49,060 --> 00:06:53,500
+I think this diagram should draw a clearer or a better picture for you.
+
+109
+00:06:53,650 --> 00:06:54,010
+OK.
+
+110
+00:06:54,430 --> 00:06:58,840
+So basically, when you talk about your customer partner, the quite a few things that you need to know.
+
+111
+00:06:58,840 --> 00:07:02,920
+I've mentioned Kubelet, which basically lets you run your Pods.
+
+112
+00:07:02,920 --> 00:07:04,640
+Your pods are run by your kubelet.
+
+113
+00:07:04,660 --> 00:07:06,250
+That is what your Kubelet does.
+
+114
+00:07:06,280 --> 00:07:06,580
+OK.
+
+115
+00:07:06,820 --> 00:07:08,740
+There are other things as well that you need to know here.
+
+116
+00:07:09,160 --> 00:07:11,740
+You have your Azure virtual network interface now.
+
+117
+00:07:11,760 --> 00:07:16,690
+It is something that takes care of all the interface requirements that you might otherwise have.
+
+118
+00:07:16,780 --> 00:07:17,090
+OK.
+
+119
+00:07:17,650 --> 00:07:21,070
+And similarly, you have your kube-proxy, right?
+
+120
+00:07:21,550 --> 00:07:28,330
+kube-proxy again works together with your virtual network interface or basically your Azure virtual
+
+121
+00:07:28,330 --> 00:07:30,070
+network and tells you what needs to be done.
+
+122
+00:07:30,340 --> 00:07:35,050
+OK, now all these things, they reside on a virtual machine again.
+
+123
+00:07:35,060 --> 00:07:37,930
+So we've discussed all the differences and benefits.
+
+124
+00:07:37,930 --> 00:07:38,230
+of it.
+
+125
+00:07:38,530 --> 00:07:42,130
+So what Azure does is it basically launches a virtual machine for you.
+
+126
+00:07:42,130 --> 00:07:45,440
+On top of it, your containers would reside.
+
+127
+00:07:45,820 --> 00:07:49,690
+So when you talk about these containers again, these are nothing but the applications that are running
+
+128
+00:07:49,690 --> 00:07:49,990
+for you.
+
+129
+00:07:50,080 --> 00:07:50,410
+OK?
+
+130
+00:07:50,740 --> 00:07:55,840
+And these are the services that would help you actually implement or control all these applications
+
+131
+00:07:55,840 --> 00:08:01,090
+that are there you can actually go ahead and scale up your virtual machines to meet the requirements
+
+132
+00:08:01,090 --> 00:08:03,370
+of your application in different ways.
+
+133
+00:08:03,880 --> 00:08:06,520
+So this is how the working of a AKS is.
+
+134
+00:08:06,520 --> 00:08:12,370
+I mean, this is how the Master node works, and this is how your basically custom node or your worker
+
+135
+00:08:12,370 --> 00:08:16,690
+nodes work when you talk about AKS, will see these as we get into the demo.

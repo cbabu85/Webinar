@@ -1,0 +1,83 @@
+1
+00:00:00,120 --> 00:00:06,540
+Whenever we talk about container orchestration, we always talk about Kubernetes, which is a very powerful
+
+2
+00:00:06,540 --> 00:00:08,310
+container orchestration tool.
+
+3
+00:00:09,390 --> 00:00:15,990
+Similarly, when we talk about cloud computing, we can always think of Microsoft Azure, which is one
+
+4
+00:00:15,990 --> 00:00:18,780
+of the leading cloud service providers in the market.
+
+5
+00:00:19,870 --> 00:00:24,070
+Now, when we combine these two, we get a service called Azure Kubernetes Service.
+
+6
+00:00:25,160 --> 00:00:28,730
+Which is a highly popular cloud container orchestration service.
+
+7
+00:00:29,360 --> 00:00:35,150
+But what is AKS and what does it do in this Azure Kubernetes service tutorial?
+
+8
+00:00:35,300 --> 00:00:37,760
+We'll be discussing this topic to the very core.
+
+9
+00:00:38,420 --> 00:00:41,750
+Now, let us go ahead and take a look at the agenda for the course.
+
+10
+00:00:42,910 --> 00:00:46,720
+Taking a look at the agenda, we'll be talking about following pointers.
+
+11
+00:00:47,440 --> 00:00:50,350
+Let's start by understanding what Azure Kubernetes is is .
+
+12
+00:00:50,650 --> 00:00:56,320
+But to understand that we would need to get into the details of topics like how software development
+
+13
+00:00:56,320 --> 00:00:58,120
+and deployment has evolved over time.
+
+14
+00:00:58,660 --> 00:01:01,840
+We'd also understand virtual machines and containers.
+
+15
+00:01:02,500 --> 00:01:05,340
+We'll understand how Kubernetes works to the core.
+
+16
+00:01:06,490 --> 00:01:10,540
+Then we'll discuss AKS and understand how it is different from Kubernetes.
+
+17
+00:01:11,660 --> 00:01:16,730
+Then we'd go ahead and take a look at a use case that tells us how as a Kubernetes service has helped
+
+18
+00:01:16,730 --> 00:01:18,110
+customers around the globe.
+
+19
+00:01:19,140 --> 00:01:23,970
+And finally, we would finish things off with a demo where we would understand how we can actually go
+
+20
+00:01:23,970 --> 00:01:27,660
+ahead and spawn container images using Azure Kubernetes service.
+
+21
+00:01:28,720 --> 00:01:31,690
+So let us not waste any time and quickly get started.

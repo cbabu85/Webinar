@@ -1,0 +1,59 @@
+1
+00:00:00,750 --> 00:00:06,150
+So first and foremost, let's try and understand what Asia Kubernetes services.
+
+2
+00:00:07,210 --> 00:00:10,840
+Now, I'm not going to get into the details of this service right away.
+
+3
+00:00:10,870 --> 00:00:12,590
+I'll just give you an introduction.
+
+4
+00:00:13,630 --> 00:00:17,620
+Azure Kubernetes Service is a fully managed container management service.
+
+5
+00:00:18,250 --> 00:00:23,860
+It is provided by Microsoft Azure, obviously, which is a very popular cloud service provider.
+
+6
+00:00:24,520 --> 00:00:29,950
+Recent stats also state that it is one of the leading public cloud service providers in the market.
+
+7
+00:00:31,050 --> 00:00:35,760
+So when you talk about Azure, Kubernetes, it is basically managed by Microsoft Azure.
+
+8
+00:00:36,860 --> 00:00:41,450
+What it does is it offers serverless, continuous integration and deployment experience.
+
+9
+00:00:42,110 --> 00:00:43,310
+Now what does that mean?
+
+10
+00:00:43,580 --> 00:00:49,010
+What we can do with it, we'll discuss all those things as we get into the details of Azure Kubernetes
+
+11
+00:00:49,100 --> 00:00:49,730
+service.
+
+12
+00:00:50,840 --> 00:00:54,800
+For now, we need to understand a few other concepts before we get to that point.
+
+13
+00:00:55,520 --> 00:01:01,910
+But to summarize few of its benefits, what Azure Kubernetes service does is it offers end to end deployment,
+
+14
+00:01:02,000 --> 00:01:03,920
+scalability and availability.
+
+15
+00:01:04,580 --> 00:01:06,290
+Now how do these things work?

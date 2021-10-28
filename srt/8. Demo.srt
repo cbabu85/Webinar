@@ -1,0 +1,1101 @@
+1
+00:00:00,210 --> 00:00:04,110
+As far as the session goes, would go ahead and take a look at the demo and understand how they can
+
+2
+00:00:04,110 --> 00:00:08,430
+actually go ahead and set up an Azure Kubernetes Cluster and a lot more.
+
+3
+00:00:09,820 --> 00:00:12,730
+OK, so guys, let's go ahead and get into the demo part now.
+
+4
+00:00:12,820 --> 00:00:18,280
+This is how the Azure portal looks like, OK, I've signed into the Azure portal now for people who
+
+5
+00:00:18,280 --> 00:00:19,510
+are new to Microsoft Azure.
+
+6
+00:00:19,750 --> 00:00:26,350
+What Microsoft Azure does is it gives you an Azure portal where you can implement all the cloud related
+
+7
+00:00:26,350 --> 00:00:28,570
+activities that concern Microsoft Azure.
+
+8
+00:00:28,660 --> 00:00:34,810
+OK, so if you want to practice from scratch, it also offers a free tier account where you have a number
+
+9
+00:00:34,810 --> 00:00:36,760
+of services available free of cost.
+
+10
+00:00:36,880 --> 00:00:37,210
+OK.
+
+11
+00:00:37,450 --> 00:00:43,420
+Or rather, in case of Azure it works differently for AWS, you have those free services with Azure.
+
+12
+00:00:43,450 --> 00:00:49,600
+You have this $200 off credit that it gives you, so you can spend those two hundred dollars on creating
+
+13
+00:00:49,600 --> 00:00:53,500
+resources for eleven months duration post that those will expire.
+
+14
+00:00:54,010 --> 00:00:56,980
+So if you do not have an account, you can just go ahead and create a free tier account.
+
+15
+00:00:57,040 --> 00:01:01,840
+Fill in the details right and you should have this free Azure portal for your usage.
+
+16
+00:01:02,140 --> 00:01:02,470
+OK.
+
+17
+00:01:02,920 --> 00:01:04,330
+In my case, this is a paid account.
+
+18
+00:01:04,330 --> 00:01:05,700
+Again, this is the personal account.
+
+19
+00:01:05,980 --> 00:01:07,330
+It's called pay as you go.
+
+20
+00:01:07,330 --> 00:01:11,980
+In my case, in your case, it will be a free tire account, but the functionality would be similar for you
+
+21
+00:01:11,980 --> 00:01:12,150
+as.
+
+22
+00:01:12,520 --> 00:01:15,400
+The only thing is with the paid account, you have more.
+
+23
+00:01:15,670 --> 00:01:20,830
+Services available to you, and even the larger instances is something that you can actually go ahead
+
+24
+00:01:20,830 --> 00:01:26,170
+and spawn and use because you're paying for those right and the free tier, you don't have to worry
+
+25
+00:01:26,170 --> 00:01:27,250
+about paying for them, right?
+
+26
+00:01:27,760 --> 00:01:34,530
+So there are certain restrictions and limits that so do go ahead and register to Microsoft Azure Portal.
+
+27
+00:01:34,630 --> 00:01:41,830
+OK, now coming back to the demo part, what we are going to do now is we are going to create a Kubernetes
+
+28
+00:01:41,830 --> 00:01:47,650
+cluster and on top of that, we are going to deploy an application and the application would be a basic
+
+29
+00:01:47,650 --> 00:01:49,660
+pre-built app by Microsoft Azure.
+
+30
+00:01:49,660 --> 00:01:50,890
+We are not going to create a new app.
+
+31
+00:01:50,890 --> 00:01:54,910
+I will be sharing the code for the application so do not worry about that.
+
+32
+00:01:55,270 --> 00:02:00,340
+So we are just going to go ahead and use that pre-built core and we are going to deploy that code on
+
+33
+00:02:00,340 --> 00:02:01,300
+top of kubernetes.
+
+34
+00:02:01,300 --> 00:02:02,800
+cluster that we have.
+
+35
+00:02:02,830 --> 00:02:03,160
+OK.
+
+36
+00:02:03,550 --> 00:02:07,420
+So the main thing to note here is we have to see how easily the cluster is created.
+
+37
+00:02:07,720 --> 00:02:11,110
+We are not concerned about the orchestration process at all here.
+
+38
+00:02:11,440 --> 00:02:15,910
+Everything is taken care of by your Microsoft Azure and that is what we are going to look into.
+
+39
+00:02:16,240 --> 00:02:17,570
+So let's not waste any time.
+
+40
+00:02:17,620 --> 00:02:22,430
+Yes, quickly go ahead and get an instance in place, rather a cluster in place.
+
+41
+00:02:22,450 --> 00:02:22,750
+OK.
+
+42
+00:02:22,870 --> 00:02:26,920
+So to do that, we are going to click on this icon and to create a resource.
+
+43
+00:02:27,550 --> 00:02:27,880
+OK?
+
+44
+00:02:28,080 --> 00:02:31,330
+You can see all the service domains that are there for offering.
+
+45
+00:02:31,750 --> 00:02:36,250
+So I'm going to click on the containers one and click on Kubernetes service.
+
+46
+00:02:36,910 --> 00:02:40,660
+Once you do that, you'll see it'll be brought to this page and you'll get all the details right.
+
+47
+00:02:41,020 --> 00:02:45,340
+It gives managers your hosted Kubernetes environment, making it quick and easy for you to manage
+
+48
+00:02:45,340 --> 00:02:46,960
+containerised applications.
+
+49
+00:02:47,410 --> 00:02:52,420
+The main point is without having to container orchestrate or have any expertise in that.
+
+50
+00:02:52,570 --> 00:02:52,870
+OK.
+
+51
+00:02:53,170 --> 00:02:57,070
+It eliminates burden of ongoing operations and maintaining provisioning, upgrading.
+
+52
+00:02:57,070 --> 00:03:01,390
+scaling a resources rather which happens on demand here, so you don't have to worry about those
+
+53
+00:03:01,390 --> 00:03:01,720
+things.
+
+54
+00:03:02,170 --> 00:03:03,940
+So let's just go ahead and create a resource group.
+
+55
+00:03:04,120 --> 00:03:09,020
+So for people who do not know what a resource groups are resource group is, nothing.
+
+56
+00:03:09,020 --> 00:03:14,740
+But you can think of it as a small container or a folder where you put forth all the necessary things
+
+57
+00:03:14,740 --> 00:03:17,660
+that are important for your resource to work.
+
+58
+00:03:17,690 --> 00:03:22,480
+Now, in this case, the resource is Kubernetes so quite a few other integrities related to it would
+
+59
+00:03:22,480 --> 00:03:23,500
+be in the resource group.
+
+60
+00:03:23,650 --> 00:03:25,660
+OK, so let's just go ahead and create one.
+
+61
+00:03:26,200 --> 00:03:27,970
+So I'm going to click on create new.
+
+62
+00:03:28,720 --> 00:03:32,380
+Let's just say we have RGforDemo.
+
+63
+00:03:33,230 --> 00:03:34,400
+For the moment.
+
+64
+00:03:35,570 --> 00:03:38,060
+I'm going to give a simple name so that I can remember that.
+
+65
+00:03:38,340 --> 00:03:45,110
+Okay, so I'm going to say, OK, I'm going to create a cluster, I'm going to call it kubecluster.
+
+66
+00:03:45,680 --> 00:03:46,760
+OK, this is enough.
+
+67
+00:03:47,090 --> 00:03:50,210
+So Kube, let's call it Kubecluster.
+
+68
+00:03:50,330 --> 00:03:50,610
+OK?
+
+69
+00:03:51,290 --> 00:03:52,460
+And this is in place.
+
+70
+00:03:52,790 --> 00:03:53,690
+Where do I want it?
+
+71
+00:03:53,930 --> 00:03:57,080
+If you're using a Pay-As-You-Go model, there won't be any restrictions here.
+
+72
+00:03:57,140 --> 00:03:58,880
+If you're using free tier, there might be some.
+
+73
+00:03:58,910 --> 00:03:59,210
+OK.
+
+74
+00:03:59,810 --> 00:04:01,700
+So just select any reason that you want to do.
+
+75
+00:04:01,700 --> 00:04:05,120
+I'm going to randomly selected is and now what region you to be.
+
+76
+00:04:05,810 --> 00:04:07,490
+My region would be.
+
+77
+00:04:08,460 --> 00:04:09,620
+OK, let's pick this one.
+
+78
+00:04:10,130 --> 00:04:12,500
+And it would ask me, how many nodes do you want to create?
+
+79
+00:04:12,800 --> 00:04:13,670
+Let's create one.
+
+80
+00:04:13,670 --> 00:04:17,540
+Since it's a very simple demo, we do not need more nodes, OK?
+
+81
+00:04:17,980 --> 00:04:19,490
+We we've discussed what nodes are right?.
+
+82
+00:04:19,940 --> 00:04:21,320
+So that is what we are doing.
+
+83
+00:04:21,320 --> 00:04:24,590
+We are creating a node here where an application would run, basically.
+
+84
+00:04:24,920 --> 00:04:32,270
+So I'm going say review or lets go ahead and see if we have all the settings, node pools, authentication.
+
+85
+00:04:32,270 --> 00:04:39,290
+You have two options whether you want your server or rather your cloud platform to manage your identity
+
+86
+00:04:39,290 --> 00:04:42,860
+pools and basically create resources accordingly.
+
+87
+00:04:43,130 --> 00:04:48,290
+You can do that, or you can select a service principle, which is an older way to do it
+
+88
+00:04:48,290 --> 00:04:50,150
+where you use an Azuret Active Directory to do that.
+
+89
+00:04:50,630 --> 00:04:52,400
+So there's no rule here you can go for this one as well.
+
+90
+00:04:52,670 --> 00:04:55,990
+I'm just going to do this just because I've thought of showing it to you.
+
+91
+00:04:56,000 --> 00:04:59,450
+I selected that it does not hold a lot of impact on our demo.
+
+92
+00:04:59,510 --> 00:04:59,810
+OK.
+
+93
+00:05:00,380 --> 00:05:01,790
+Just going to say create and review.
+
+94
+00:05:01,880 --> 00:05:02,140
+OK.
+
+95
+00:05:02,690 --> 00:05:05,810
+So for creating this thing now, it will review all the requirements.
+
+96
+00:05:05,810 --> 00:05:12,470
+If the requirements are in place, what it will do is it will just go ahead and create your cluster
+
+97
+00:05:12,470 --> 00:05:13,730
+and put everything in place.
+
+98
+00:05:14,060 --> 00:05:16,430
+OK, so it says, do you want to create it now?
+
+99
+00:05:16,430 --> 00:05:22,100
+I'll say yes, create okay lets fresh and see whether our application is done.
+
+100
+00:05:23,390 --> 00:05:24,870
+Now it's still deploying.
+
+101
+00:05:25,530 --> 00:05:28,680
+Let's wait for this deployment to get in place and once it's done.
+
+102
+00:05:29,070 --> 00:05:34,110
+Yes, and go ahead and get these things in place after this, the process is very simple.
+
+103
+00:05:34,180 --> 00:05:34,470
+OK.
+
+104
+00:05:34,920 --> 00:05:40,050
+We are going to just go ahead and put in a certain set of commands and a job would be done.
+
+105
+00:05:40,530 --> 00:05:42,550
+So you don't have to wait for too long.
+
+106
+00:05:42,570 --> 00:05:43,170
+Post that?
+
+107
+00:05:44,260 --> 00:05:44,680
+OK.
+
+108
+00:05:44,970 --> 00:05:49,970
+There's just refresh it again and see whether it's in place normally takes a couple of minutes or could
+
+109
+00:05:49,970 --> 00:05:50,850
+take longer.
+
+110
+00:05:51,410 --> 00:05:53,540
+But it's a very easy deployment process.
+
+111
+00:05:54,080 --> 00:05:58,400
+So let me give you an idea as in what happens when you say that the deployment is happening.
+
+112
+00:05:58,400 --> 00:06:04,130
+So first, your kubernetes will actually go ahead and launch a Linux instance to start?
+
+113
+00:06:04,550 --> 00:06:04,880
+OK.
+
+114
+00:06:05,300 --> 00:06:12,470
+So once the Linux instance is in place, that is when will actually go ahead and put forth all our resources.
+
+115
+00:06:12,470 --> 00:06:15,800
+On top of it, in that Linux instance will set up a cluster.
+
+116
+00:06:15,810 --> 00:06:21,050
+Right all the integrities that we need an on top of the cluster our application would start working here.
+
+117
+00:06:21,050 --> 00:06:25,280
+In this case, it would probably set up a cache could be Redis as well.
+
+118
+00:06:25,280 --> 00:06:27,710
+We'll have to go ahead and look into it, whether that one.
+
+119
+00:06:27,930 --> 00:06:28,250
+OK.
+
+120
+00:06:28,730 --> 00:06:33,740
+And then accordingly, if we can go ahead and implement everything on top of that, but we don't have
+
+121
+00:06:33,740 --> 00:06:35,480
+to get into the complications of things.
+
+122
+00:06:35,660 --> 00:06:37,760
+It's a fairly simple process for us.
+
+123
+00:06:37,880 --> 00:06:38,180
+OK.
+
+124
+00:06:38,990 --> 00:06:41,330
+OK, let's just go ahead and refresh it once more.
+
+125
+00:06:46,300 --> 00:06:47,140
+No, it's done.
+
+126
+00:06:48,300 --> 00:06:52,950
+Your deployment has been complete is what it says that means we are good to go ahead and use the resource.
+
+127
+00:06:52,980 --> 00:06:54,570
+You can do other things as well.
+
+128
+00:06:54,570 --> 00:06:56,740
+On top of it, it is suggesting what you can do.
+
+129
+00:06:56,830 --> 00:06:58,950
+OK, so we are going to do one of these things.
+
+130
+00:06:58,950 --> 00:07:02,630
+Do not worry to just go to the resource in our case, OK?
+
+131
+00:07:03,150 --> 00:07:06,420
+And in this resource, you can see there's all the information that you need.
+
+132
+00:07:06,580 --> 00:07:06,870
+OK?
+
+133
+00:07:07,210 --> 00:07:09,630
+You'll get to know where it is hosted and stuff like that.
+
+134
+00:07:09,630 --> 00:07:11,970
+What kind of instance it is that it is located.
+
+135
+00:07:12,330 --> 00:07:12,870
+Everything.
+
+136
+00:07:12,870 --> 00:07:14,730
+One node pool is what you have, right?
+
+137
+00:07:15,090 --> 00:07:17,790
+So you have all the information to actually go ahead and connect to it.
+
+138
+00:07:18,670 --> 00:07:24,600
+So in your case, I'm hopeful that could happen faster than what you see in my case or on my screen
+
+139
+00:07:24,610 --> 00:07:25,000
+rather.
+
+140
+00:07:26,140 --> 00:07:28,700
+You see, cloud shell is up and running.
+
+141
+00:07:28,720 --> 00:07:37,090
+So let's just go ahead now and basically get credentials right, let's get the credentials or
+
+142
+00:07:37,180 --> 00:07:41,330
+merged cluster so that we can start using.
+
+143
+00:07:41,470 --> 00:07:42,620
+So how do we do that?
+
+144
+00:07:42,640 --> 00:07:46,710
+We use this command we say, "$az aks", OK?
+
+145
+00:07:47,290 --> 00:07:52,600
+And in this case, what we are going to do is we're going to say, get credentials "$az aks get-credentials".
+
+146
+00:07:55,970 --> 00:08:00,410
+OK, now the next thing is, what do we need resource group details.
+
+147
+00:08:01,190 --> 00:08:03,920
+When I say "$az aks get-credentials --resource
+
+148
+00:08:05,040 --> 00:08:13,320
+And I'm going to give the resource group name, which I am certain that we should see if we just scroll
+
+149
+00:08:13,320 --> 00:08:13,920
+up, OK?
+
+150
+00:08:14,280 --> 00:08:17,540
+So the resource name is RGforDemo that we used, OK?
+
+151
+00:08:17,920 --> 00:08:20,670
+Just For demo.
+"$az aks get-credentials --resource-groupRGforDemo"
+152
+00:08:21,180 --> 00:08:26,700
+And what we also need is we need the name of the cluster.
+
+153
+00:08:26,700 --> 00:08:29,540
+And in this case, it is kubecluster.
+$az aks get-credentials --resource-groupRGforDemo --name kubecluster
+
+
+154
+00:08:29,550 --> 00:08:31,410
+So you can do it, vice versa as well.
+
+155
+00:08:31,410 --> 00:08:32,210
+You don't have to go.
+
+156
+00:08:32,220 --> 00:08:39,910
+This order can start by giving in the details for your cluster and then detail for Resource Group.
+
+157
+00:08:39,930 --> 00:08:41,540
+I'm just going to hit the enter button now.
+
+158
+00:08:43,720 --> 00:08:49,060
+merged kubecluster as a current context, in this path is what it says.
+
+159
+00:08:49,090 --> 00:08:53,440
+OK, now let's just go ahead and get details for the node.
+
+160
+00:08:53,440 --> 00:08:57,370
+In this case, we know there's only one node, but you could be working on multiple nodes, right?
+
+161
+00:08:57,640 --> 00:09:00,330
+So in that case, you have to use this command "$kubectl.
+
+162
+00:09:00,340 --> 00:09:00,850
+You see.
+
+163
+00:09:01,190 --> 00:09:07,290
+You see, it is basically a client side interactive tool for interacting with your kubernetes.
+
+164
+00:09:07,300 --> 00:09:09,460
+OK, so that is what kubectl is all about.
+
+165
+00:09:09,490 --> 00:09:09,750
+OK.
+
+166
+00:09:10,060 --> 00:09:12,370
+And you say, get nodes "$kubectl get nodes".
+
+167
+00:09:13,850 --> 00:09:16,490
+If there are multiple nodes, it will give you multiple nodes.
+
+168
+00:09:16,850 --> 00:09:19,400
+If there's only one node, it will give you only one node.
+
+169
+00:09:20,680 --> 00:09:24,160
+So there you ago, you can see that there's one node that we have with this, OK?
+
+170
+00:09:24,430 --> 00:09:25,360
+We have all the details.
+
+171
+00:09:25,360 --> 00:09:27,340
+It's been running form, it says, right?
+
+172
+00:09:27,340 --> 00:09:29,110
+Because that is when we started the node.
+
+173
+00:09:29,350 --> 00:09:35,560
+OK, now the next thing is we are going to go ahead and select the YAML file where we've actually put
+
+174
+00:09:35,560 --> 00:09:38,080
+forward the details for our application right.
+
+175
+00:09:38,500 --> 00:09:39,580
+So how do we do that?
+
+176
+00:09:39,670 --> 00:09:42,220
+For that, we are going to go ahead and use this command. "$nano"
+
+177
+00:09:42,250 --> 00:09:42,550
+OK.
+
+178
+00:09:43,210 --> 00:09:43,750
+Now, no.
+
+179
+00:09:45,020 --> 00:09:52,130
+OK, space aside, the name of the application is the application that is related to voting.
+
+180
+00:09:52,460 --> 00:09:54,750
+So that is what I'm going to use this name and I'm going to say. "$nano azure-vote.yaml
+
+181
+00:09:57,240 --> 00:09:57,610
+OK.
+
+182
+00:10:00,780 --> 00:10:07,890
+
+186
+00:10:17,130 --> 00:10:19,170
+I'm going to just paste the code here.
+
+187
+00:10:19,470 --> 00:10:21,810
+So basically, this is where you'll have all the details.
+
+188
+00:10:21,810 --> 00:10:23,300
+What is the API that is being used?
+
+189
+00:10:23,310 --> 00:10:24,870
+What is the container port right?
+
+190
+00:10:25,140 --> 00:10:27,150
+What is the memory that you are using?
+
+191
+00:10:27,390 --> 00:10:28,890
+What call are you making?
+
+192
+00:10:28,890 --> 00:10:29,190
+Right?
+
+193
+00:10:29,190 --> 00:10:30,600
+All those details are here.
+
+194
+00:10:30,960 --> 00:10:34,650
+Do not worry, I'll share the link to this piece of code.
+
+195
+00:10:34,950 --> 00:10:37,470
+If not, you can just look for Azure demos.
+
+196
+00:10:37,470 --> 00:10:42,060
+or getting started with Azure on your browser and you'll find this piece of code.
+
+197
+00:10:42,060 --> 00:10:43,140
+It's available everywhere.
+
+198
+00:10:43,440 --> 00:10:45,840
+You'll get this code on GitHub as well.
+
+199
+00:10:46,440 --> 00:10:52,290
+I do not own this code, so I will not take any right in saying that this is something that I've created.
+
+200
+00:10:52,290 --> 00:10:56,040
+It is a code that has been used and it is somebody else's work.
+
+201
+00:10:56,160 --> 00:11:01,230
+OK, so you may check out online for the details.
+
+202
+00:11:01,500 --> 00:11:01,830
+OK.
+
+203
+00:11:02,550 --> 00:11:04,030
+
+
+204
+00:11:04,050 --> 00:11:07,540
+I'm just going to go ahead and paste my piece of code here.
+
+205
+00:11:07,560 --> 00:11:07,950
+OK?
+
+206
+00:11:08,820 --> 00:11:12,480
+When I say and all the code is again here with us.
+
+207
+00:11:12,720 --> 00:11:16,420
+OK, now how do I go ahead with it in this case?
+
+208
+00:11:16,890 --> 00:11:21,540
+I'm going to say save 
+
+209
+00:11:21,540 --> 00:11:23,100
+I'm just going to say exit for now.
+
+210
+00:11:23,370 --> 00:11:28,360
+
+
+211
+00:11:28,360 --> 00:11:29,160
+So we'll say yes.
+
+212
+00:11:29,160 --> 00:11:34,470
+
+
+213
+00:11:34,800 --> 00:11:36,750
+So it will take me back to my cluster.
+
+214
+00:11:36,960 --> 00:11:37,320
+OK.
+
+215
+00:11:37,740 --> 00:11:44,850
+The next step is now what we are going to do is we are going to go ahead and call out this YAML file.
+
+216
+00:11:44,880 --> 00:11:45,270
+OK.
+
+217
+00:11:45,540 --> 00:11:48,380
+So once we do that, this is how we're going to do it.
+
+218
+00:11:48,390 --> 00:11:49,980
+We're going to say, "$kubectl apply -f azure-vote.yaml".
+
+219
+00:11:50,130 --> 00:11:50,490
+hit the enter button OK.
+
+
+224
+00:11:58,440 --> 00:12:00,780
+What was the name again, slash what?
+
+225
+00:12:01,940 --> 00:12:03,530
+Not Yemen.
+
+229
+00:12:12,750 --> 00:12:15,360
+Its friends created its backers created right.
+
+230
+00:12:15,630 --> 00:12:17,820
+So we need to see how it looks like, right?
+
+231
+00:12:18,120 --> 00:12:23,070
+So we are going to find out all the details as if we want to watch this app working.
+
+232
+00:12:23,400 --> 00:12:24,620
+We need details for it.
+
+233
+00:12:24,630 --> 00:12:27,570
+So we are just going to go ahead and use a command called as get service.
+
+234
+00:12:28,320 --> 00:12:30,120
+OK, so get services in place.
+
+235
+00:12:30,450 --> 00:12:35,640
+And in this case, again, my app name as you are what?
+
+236
+00:12:36,180 --> 00:12:37,860
+But this time I want different.
+
+237
+00:12:38,010 --> 00:12:39,780
+OK, so I'm going to say front.
+
+238
+00:12:40,730 --> 00:12:42,140
+And I'm going to say much.
+
+239
+00:12:43,860 --> 00:12:44,930
+And he and Dalton.
+
+240
+00:12:47,240 --> 00:12:50,600
+I basically made a blunder here, and that blunders.
+
+241
+00:12:51,200 --> 00:12:52,790
+We have to call this command true.
+
+242
+00:12:53,980 --> 00:12:54,600
+Typekit.
+
+243
+00:12:54,940 --> 00:12:55,340
+Right.
+
+244
+00:12:55,360 --> 00:13:00,220
+So in this case, again, we'll have to tape the remaining command again, so I'm just going to do it
+
+245
+00:13:00,220 --> 00:13:00,720
+quickly.
+
+246
+00:13:00,760 --> 00:13:02,470
+OK, get this.
+
+247
+00:13:03,710 --> 00:13:05,330
+As they are what?
+
+248
+00:13:07,110 --> 00:13:07,980
+Nice front.
+
+249
+00:13:09,090 --> 00:13:09,690
+Watch.
+
+250
+00:13:13,020 --> 00:13:16,850
+And you have external IP, so guys, at times what you see here.
+
+251
+00:13:17,400 --> 00:13:22,080
+Your external IP, if your system is very slow, which is in my case, but I don't know what happened,
+
+252
+00:13:22,590 --> 00:13:24,900
+it's aged only 85 seconds is what it is.
+
+253
+00:13:25,110 --> 00:13:28,950
+So normally it takes time for you to see this external IP, OK?
+
+254
+00:13:29,370 --> 00:13:30,900
+But luckily we can see it.
+
+255
+00:13:31,320 --> 00:13:32,730
+So I'm going to just copy it yet.
+
+256
+00:13:32,800 --> 00:13:33,220
+OK.
+
+257
+00:13:33,660 --> 00:13:34,260
+And I'm going to be.
+
+258
+00:13:35,160 --> 00:13:38,070
+And this way we should be able to see the application that we've created.
+
+259
+00:13:38,220 --> 00:13:38,520
+OK.
+
+260
+00:13:39,120 --> 00:13:40,260
+So it can see you can walk it.
+
+261
+00:13:40,830 --> 00:13:47,220
+One Let me work for dogs twice, thrice and I can just go ahead and reset it as well.
+
+262
+00:13:47,550 --> 00:13:51,570
+OK, so guys, this is how you actually go ahead and create a cluster.
+
+263
+00:13:51,690 --> 00:13:52,080
+OK.
+
+264
+00:13:52,470 --> 00:13:55,560
+A suggestion here would be you delete all the resources that is there.
+
+265
+00:13:55,560 --> 00:14:00,750
+Delete this one, delete the research group and also assert active directly so that you do not get just
+
+266
+00:14:00,990 --> 00:14:07,500
+if you want to see what we did here and how the performance went on, Azure lets you track all the working
+
+267
+00:14:07,500 --> 00:14:08,120
+as well, right?
+
+268
+00:14:08,130 --> 00:14:12,540
+If you want to take a look at the insights and stuff, if we click here, you'll have all those details
+
+269
+00:14:12,540 --> 00:14:12,900
+as well.
+
+270
+00:14:14,950 --> 00:14:15,760
+So there you go.
+
+271
+00:14:15,840 --> 00:14:18,730
+If I just refresh it, you should have all the details.
+
+272
+00:14:19,780 --> 00:14:21,140
+How long did we use the cluster?
+
+273
+00:14:21,160 --> 00:14:22,520
+This is where the users started.
+
+274
+00:14:22,550 --> 00:14:24,490
+Okay, so you get all these details that you want.
+
+275
+00:14:26,200 --> 00:14:26,920
+Chicken do that.
+
+276
+00:14:27,730 --> 00:14:34,870
+So that's it, I believe this demo is clear to you, people, and you got to know what things we worked
+
+277
+00:14:34,870 --> 00:14:40,900
+on, how we view these things and how basically your Kubernetes cluster works, OK?
+
+278
+00:14:41,140 --> 00:14:44,230
+So we've created a simple Kubernetes cluster and explored it.
+
+279
+00:14:44,590 --> 00:14:49,720
+And so when you go back, you just delete, just go to the resources and delete that resource group,
+
+280
+00:14:49,720 --> 00:14:52,130
+the cluster and the Active Directory, if any.
+
+281
+00:14:52,150 --> 00:14:53,890
+OK, so that's it.
+
+282
+00:14:53,890 --> 00:14:54,400
+From my end.
+
+283
+00:14:54,520 --> 00:14:56,680
+I hope you all enjoyed the session.
+
+284
+00:14:57,340 --> 00:14:57,830
+Thank you.
+
+285
+00:14:57,880 --> 00:14:58,300
+Bye bye.

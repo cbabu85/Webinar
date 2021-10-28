@@ -1,0 +1,295 @@
+1
+00:00:00,240 --> 00:00:06,120
+Now, before we actually go ahead and understand how Kubernetes works and why are we talking about containers
+
+2
+00:00:06,120 --> 00:00:06,720
+and stuff?
+
+3
+00:00:07,850 --> 00:00:11,620
+We need to understand how containers are different from virtual machines.
+
+4
+00:00:12,770 --> 00:00:17,300
+Because virtual machines are something that people have been using, and many of them have migrated
+
+5
+00:00:17,300 --> 00:00:18,110
+to containers.
+
+6
+00:00:18,740 --> 00:00:19,400
+But why?
+
+7
+00:00:20,060 --> 00:00:23,720
+Because both of them, they have their benefits and reasons for these benefits.
+
+8
+00:00:24,850 --> 00:00:30,940
+So let us try and understand how a container is different from a virtual machine more than a comparison,
+
+9
+00:00:30,940 --> 00:00:34,450
+though, it is just understanding how they are different from each other.
+
+10
+00:00:35,110 --> 00:00:39,070
+Now this image should give you an understanding as to how these two things are different.
+
+11
+00:00:40,220 --> 00:00:46,130
+The one on the left hand side is your container, and on the right hand side you have your virtual machine.
+
+12
+00:00:46,340 --> 00:00:51,860
+Now when you talk about virtual machine, what a virtual machine does is on top of your server, it
+
+13
+00:00:51,860 --> 00:00:54,170
+lets you host your guest operating systems.
+
+14
+00:00:55,300 --> 00:01:01,090
+To give you an example, when you talk about a service or if you talk about a cloud platform like Microsoft
+
+15
+00:01:01,090 --> 00:01:01,540
+Azure.
+
+16
+00:01:02,650 --> 00:01:07,750
+Where you have Azure virtual machines, which again lets you spawn instances or virtual machines.
+
+17
+00:01:08,840 --> 00:01:12,770
+Now, these virtual machines or instances can have different guest OS.
+
+18
+00:01:13,910 --> 00:01:18,950
+Say, for example, if you launch a virtual machine that basically has guest OS of Linux.
+
+19
+00:01:20,090 --> 00:01:23,570
+And there's another virtual machine that has a guest OS of windows.
+
+20
+00:01:24,670 --> 00:01:29,860
+So we are talking about two different virtual machines or entities which function on the same server.
+
+21
+00:01:31,000 --> 00:01:33,040
+But they have different operating systems.
+
+22
+00:01:34,190 --> 00:01:39,620
+That means if I want an application to run in windows, I can do that using my virtual machine that
+
+23
+00:01:39,620 --> 00:01:40,880
+is windows in nature.
+
+24
+00:01:41,950 --> 00:01:47,290
+And similarly, if I want something to run on top of Linux, I can use the virtual machine that is Linux
+
+25
+00:01:47,290 --> 00:01:47,920
+in nature.
+
+26
+00:01:49,020 --> 00:01:51,390
+So that is what virtual machines are for you.
+
+27
+00:01:51,990 --> 00:01:59,220
+But there's a catch here when you talk about a virtual machine, you're talking about a server right
+
+28
+00:01:59,220 --> 00:02:04,530
+on top of that server, you'd be having your host operating system on which you'd be running a hypervisor.
+
+29
+00:02:05,610 --> 00:02:10,440
+Now, this is more of a middleware or a service that supports all the applications that are there on
+
+30
+00:02:10,440 --> 00:02:11,010
+top of it.
+
+31
+00:02:12,170 --> 00:02:16,670
+Including the operating system, the guest operating system that we are talking about.
+
+32
+00:02:17,810 --> 00:02:22,610
+Now, here, the problem is, as you can see, the virtual machines that you see on the left hand side.
+
+33
+00:02:23,680 --> 00:02:27,480
+They will have separate guest OS, they they'll have their bins, and then on top of that, they'll
+
+34
+00:02:27,480 --> 00:02:29,520
+be having the applications that are running.
+
+35
+00:02:30,620 --> 00:02:32,600
+Now, what is the disadvantage here?
+
+36
+00:02:33,320 --> 00:02:39,260
+Here, what happens is each time you have a virtual machine that is operating, we need to ensure that
+
+37
+00:02:39,260 --> 00:02:42,410
+there's a guest OS there, so there's a dependency on this.
+
+38
+00:02:43,520 --> 00:02:48,350
+And what this does is it makes it difficult for you to basically break this virtual machine from the
+
+39
+00:02:48,350 --> 00:02:52,040
+existing infrastructure architecture and make it run somewhere else.
+
+40
+00:02:52,700 --> 00:02:58,580
+Because this is a complicated process, but when you talk about containers, this is where the difference
+
+41
+00:02:58,580 --> 00:02:59,060
+lies.
+
+42
+00:02:59,720 --> 00:03:03,350
+Say, for example, I'll be having a Docker engine in this case, right?
+
+43
+00:03:04,070 --> 00:03:05,060
+It can be anything.
+
+44
+00:03:05,150 --> 00:03:10,070
+I mean, when you talk about Docker engine, it is a type of tool that provides you containers, OK?
+
+45
+00:03:10,760 --> 00:03:13,670
+So supports containers spawning for you, in simple words.
+
+46
+00:03:14,420 --> 00:03:16,250
+The other container tools as well.
+
+47
+00:03:17,410 --> 00:03:19,390
+But we are not here to discuss Docker
+
+48
+00:03:19,630 --> 00:03:22,960
+But just know Docker is one of the most popular container tools.
+
+49
+00:03:23,680 --> 00:03:25,510
+That is why you see Docker here.
+
+50
+00:03:26,230 --> 00:03:30,160
+So think of it as your container image of what you see there in the left hand side.
+
+51
+00:03:31,290 --> 00:03:37,290
+So you can see that there's a server host, you have your hypervisor, you have your guest OS, so guest
+
+52
+00:03:37,290 --> 00:03:38,760
+OS here is common, right?
+
+53
+00:03:39,450 --> 00:03:44,490
+So when you have a guest OS here, what that means is all the containers that would be running on top
+
+54
+00:03:44,490 --> 00:03:46,680
+of it would be running on the same guest OS.
+
+55
+00:03:47,830 --> 00:03:53,140
+So you do not have a dependency where basically you have to ensure that all the guest OS requirements
+
+56
+00:03:53,140 --> 00:03:58,600
+are also there in your container, so your container is more independent of the operating system.
+
+57
+00:03:59,290 --> 00:04:02,260
+The only concern here, though, is in case of containers.
+
+58
+00:04:03,420 --> 00:04:08,070
+You have to ensure that if you have one hypervisor or one Docker engine that is running for you.
+
+59
+00:04:09,200 --> 00:04:12,170
+Right in that Docker engine where there's a single guest OS.
+
+60
+00:04:13,340 --> 00:04:17,660
+In that case, you'll be running all your containers that are supported by that guest OS.
+
+61
+00:04:18,770 --> 00:04:23,840
+Now, if my guest OS is windows, I cannot expect myself to run Linux containers there.
+
+62
+00:04:24,500 --> 00:04:26,210
+I'm just giving you an example.
+
+63
+00:04:26,450 --> 00:04:27,800
+So there's a drawback then.
+
+64
+00:04:28,460 --> 00:04:33,620
+But the benefit here is since your applications, your bins and your library files are independent.
+
+65
+00:04:34,790 --> 00:04:39,800
+You can package them in a container and move them across easily so you can run it on other Docker engines
+
+66
+00:04:39,800 --> 00:04:41,300
+as well to support your claim.
+
+67
+00:04:42,420 --> 00:04:45,150
+What that does is since you have this freedom here.
+
+68
+00:04:46,250 --> 00:04:52,010
+Where you're not dependent on your guest OS or you do not have a guest OS inside your container, you
+
+69
+00:04:52,010 --> 00:04:53,270
+get certain benefits.
+
+70
+00:04:54,020 --> 00:04:58,760
+It makes your containers faster, makes them reliable and at the same time makes them efficient.
+
+71
+00:04:59,890 --> 00:05:04,360
+So that is basically what containers are, and that is how they different from virtual machine.
+
+72
+00:05:05,470 --> 00:05:10,390
+So I hope by now, the point here is clear to you all, and you've understood how these things function.
+
+73
+00:05:11,050 --> 00:05:11,470
+Great.
+
+74
+00:05:12,220 --> 00:05:14,860
+Let us now go ahead and understand the other bits.

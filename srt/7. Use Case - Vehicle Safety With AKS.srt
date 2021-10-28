@@ -1,0 +1,227 @@
+1
+00:00:00,240 --> 00:00:05,670
+But before that, let's go ahead and understand a use case, or see a use case as to how vehicle safety with
+
+2
+00:00:05,700 --> 00:00:07,140
+AKS is supported.
+
+3
+00:00:07,410 --> 00:00:16,260
+Now, when we say vehicle safety, we are talking about a use case that was set forth by ABC Automotive Company and ABC Automotive Company,
+
+4
+00:00:16,260 --> 00:00:22,260
+as we all know, is a very popular company which has numerous thousands of employees working across
+
+5
+00:00:22,260 --> 00:00:25,560
+the globe for meeting different technological needs of the world.
+
+6
+00:00:25,980 --> 00:00:26,280
+OK.
+
+7
+00:00:26,670 --> 00:00:33,990
+In this particular use case, what they thought of was the amount of accidents that happen due to wrong way
+
+8
+00:00:33,990 --> 00:00:34,440
+driving.
+
+9
+00:00:34,560 --> 00:00:40,320
+OK, and what they thought was could we find a solution that could basically help us overcome this bit
+
+10
+00:00:40,320 --> 00:00:40,980
+of problem?
+
+11
+00:00:41,070 --> 00:00:48,090
+OK, so what were the problems that they were facing when you talk about wrong with driving problems,
+
+12
+00:00:48,090 --> 00:00:48,330
+right?
+
+13
+00:00:48,720 --> 00:00:52,500
+What are the issues that we face because of wrongly driving?
+
+14
+00:00:52,500 --> 00:00:56,430
+There could be a lot of accidents, unplanned casualties and stuff like that.
+
+15
+00:00:56,520 --> 00:01:03,240
+But if I am to avoid wrong way driving using technology, it's a very tedious task.
+
+16
+00:01:03,330 --> 00:01:09,360
+The reason for that is what I can try and do here is I can basically set up an application that notifies
+
+17
+00:01:09,360 --> 00:01:11,340
+me of wrong way driving right.
+
+18
+00:01:11,670 --> 00:01:16,260
+But then for that to happen, I have to have a lot of data that is in real time.
+
+19
+00:01:16,560 --> 00:01:21,480
+And when I'm driving, my only way of getting data is by using cellphones and GPUs, right?
+
+20
+00:01:21,990 --> 00:01:25,680
+But then again, there are problems with these things when you talk about cell phones.
+
+21
+00:01:26,070 --> 00:01:30,810
+They basically function very well in a radius of five meters distance.
+
+22
+00:01:30,810 --> 00:01:36,120
+When you talk about their operational radians or, radius rather their limitations when you talk
+
+23
+00:01:36,120 --> 00:01:37,920
+about range and exchanging this data.
+
+24
+00:01:38,010 --> 00:01:38,280
+OK.
+
+25
+00:01:38,640 --> 00:01:42,890
+So you can transfer data to a larger audiences.
+
+26
+00:01:42,930 --> 00:01:45,860
+We see that through WhatsApp and stuff like that.
+
+27
+00:01:45,870 --> 00:01:51,450
+If you talk about GPS kind of data, we are talking about multiple points or multiple data that we
+
+28
+00:01:51,450 --> 00:01:54,990
+are dealing with, and to deal with them parallelly can be a difficult task.
+
+29
+00:01:55,230 --> 00:01:59,340
+So because of that ABC Automotive company felt that this was an impossible task to deal with.
+
+30
+00:01:59,700 --> 00:02:00,010
+Why?
+
+31
+00:02:00,240 --> 00:02:05,550
+In order to get the last piece of information out of the noisy sensor, data can be a problem.
+
+32
+00:02:05,790 --> 00:02:11,820
+And in order to develop a highly scalable and ultraflexible service to process this data in realtime can
+
+33
+00:02:11,820 --> 00:02:13,170
+also be a tedious task.
+
+34
+00:02:13,500 --> 00:02:16,320
+What they also figured out was to solve this problem.
+
+35
+00:02:16,590 --> 00:02:20,070
+They needed this data in realtime and in very short duration.
+
+36
+00:02:20,230 --> 00:02:26,720
+If we could do that, we could actually go ahead and save accidents and we could save these wrong way
+
+37
+00:02:26,730 --> 00:02:27,570
+driving incidents.
+
+38
+00:02:27,930 --> 00:02:33,570
+And that is why they decided to work with Microsoft Azure, which was that already supporting partner.
+
+39
+00:02:33,840 --> 00:02:39,570
+What they also did was they ensured that they did go ahead and accommodate, Azure Kubernetes 
+
+40
+00:02:39,570 --> 00:02:41,520
+service in their infrastructure.
+
+41
+00:02:41,640 --> 00:02:48,750
+What does did was it ensured that ABC Automotive Company would get a repeatable, manageable clusters of containers.
+
+42
+00:02:49,110 --> 00:02:54,300
+And since they work in such short durations, do not have latencies in minutes, but rather in seconds,
+
+43
+00:02:54,720 --> 00:02:59,100
+they offered a simple form of services for them to work with.
+
+44
+00:02:59,340 --> 00:03:04,020
+And what that ensured was they had the average time to calculate that their driver is going the wrong
+
+45
+00:03:04,020 --> 00:03:06,420
+way or not in milliseconds.
+
+46
+00:03:06,780 --> 00:03:09,060
+So around 60 milliseconds, they could figure it out.
+
+47
+00:03:09,420 --> 00:03:13,730
+That is around a second where they could figure out that the driver was in the wrong way or not.
+
+48
+00:03:13,740 --> 00:03:18,300
+And that is what in basically Azure community service enabled them to do.
+
+49
+00:03:18,330 --> 00:03:22,230
+The major problem that is they had the time constraint that is something that held them on.
+
+50
+00:03:22,440 --> 00:03:28,650
+And because of that, they could come up with this wrong way, driving problem solution where they basically
+
+51
+00:03:28,650 --> 00:03:34,830
+used Microsoft Azure to host their data and basically Azure Kubernetes Service to basically help them
+
+52
+00:03:34,830 --> 00:03:40,920
+in simple provisioning, scaling of applications and ensuring that the real time data is made available
+
+53
+00:03:40,920 --> 00:03:46,080
+to the drivers within a span of 60 milliseconds, which again, is a big achievement.
+
+54
+00:03:46,500 --> 00:03:52,290
+So that is what AKS or Azure Kubernetes Service had to offer if you go to Microsoft Azure
+
+55
+00:03:52,350 --> 00:03:52,860
+website.
+
+56
+00:03:52,980 --> 00:03:56,330
+There are so many good use cases that talk about it.
+
+57
+00:03:56,550 --> 00:03:58,460
+So you might want to go out and take a look at that.

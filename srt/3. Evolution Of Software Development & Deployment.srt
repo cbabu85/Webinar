@@ -1,0 +1,283 @@
+1
+00:00:00,270 --> 00:00:02,040
+We'll discuss how they all work.
+
+2
+00:00:02,820 --> 00:00:07,620
+But before that, let's try and understand what evolution of software development and deployment is
+
+3
+00:00:07,620 --> 00:00:09,690
+and how also it has evolved with time.
+
+4
+00:00:10,740 --> 00:00:14,700
+So we all know how applications were built and how they've progressed with time.
+
+5
+00:00:15,750 --> 00:00:20,700
+So if you talk about the popular ways in which software development and deployment has evolved, we
+
+6
+00:00:20,700 --> 00:00:23,550
+all think of waterfall model, agile model and DevOps.
+
+7
+00:00:24,680 --> 00:00:29,960
+Which is the current way in which we basically go ahead and deploy applications, or basically not only
+
+8
+00:00:29,960 --> 00:00:33,530
+develop but also maintain, monitor and deploy applications.
+
+9
+00:00:34,600 --> 00:00:37,760
+So let's try and understand all of these one by one.
+
+10
+00:00:37,780 --> 00:00:39,740
+Let's see how they evolved with time.
+
+11
+00:00:40,810 --> 00:00:44,380
+So when you talk about waterfall model and Agile model or DevOps.
+
+12
+00:00:45,500 --> 00:00:48,740
+They all have these three things which basically sets them apart.
+
+13
+00:00:49,900 --> 00:00:55,420
+The application architecture, their deployment or packaging, and finally, the application infrastructure
+
+14
+00:00:55,420 --> 00:00:56,380
+that we can think of.
+
+15
+00:00:57,420 --> 00:01:02,160
+Now, when you talk about the application architecture, the first one that is the waterfall model.
+
+16
+00:01:03,240 --> 00:01:07,690
+Which is known for its monolithic architectures, which is something that we came away from.
+
+17
+00:01:08,310 --> 00:01:13,560
+If you talk about current generation, we are more into the microservices model that is handled by a
+
+18
+00:01:13,560 --> 00:01:14,130
+DevOps.
+
+19
+00:01:14,550 --> 00:01:18,750
+So when you talk about waterfall, we had monolithic applications.
+
+20
+00:01:18,750 --> 00:01:21,480
+That means everything was inside a single application.
+
+21
+00:01:22,590 --> 00:01:28,020
+Your service, your applications, even your management tools and stuff like that, everything was inside
+
+22
+00:01:28,020 --> 00:01:29,250
+a single application.
+
+23
+00:01:30,340 --> 00:01:33,790
+And these kind of architectures were called monolithic architectures.
+
+24
+00:01:34,890 --> 00:01:38,670
+Now, with time, we had agile model where we had multi-tire applications.
+
+25
+00:01:39,780 --> 00:01:44,490
+Where some of your applications or some of the functionalities of your applications were handed over
+
+26
+00:01:44,490 --> 00:01:49,290
+to some other domain or to some other tier, and hence we had multiple tiers.
+
+27
+00:01:49,530 --> 00:01:55,500
+Say, for example, you would have your application tier in one place and you basically have a database
+
+28
+00:01:55,500 --> 00:01:58,200
+in another place, something like that.
+
+29
+00:01:58,890 --> 00:02:03,720
+And when you talk about DevOps, they took this functionality to a further classified architecture.
+
+30
+00:02:04,770 --> 00:02:10,050
+Where we had microservices or granular parts of your application that could function independently.
+
+31
+00:02:10,650 --> 00:02:13,020
+Now why do we need these kind of changes?
+
+32
+00:02:13,920 --> 00:02:16,410
+Why did we not offer monolithic applications?
+
+33
+00:02:17,480 --> 00:02:22,640
+Now, when we talk about monolithic applications, these were bulky and they weren't very rigid, not
+
+34
+00:02:22,640 --> 00:02:24,660
+easy to just go ahead and modify.
+
+35
+00:02:24,890 --> 00:02:27,980
+If you had modify it, you'd have to change the entire thing.
+
+36
+00:02:28,640 --> 00:02:33,410
+When you talk about agile, it gave you more flexibility how we had multiple tiers.
+
+37
+00:02:33,680 --> 00:02:39,470
+So if one of the tiers is not functioning right, so we could actually go ahead and work on that here,
+
+38
+00:02:39,470 --> 00:02:41,990
+and it would not affect the remaining functionality.
+
+39
+00:02:42,230 --> 00:02:42,710
+Three.
+
+40
+00:02:43,820 --> 00:02:47,960
+But when you talk about DevOps, when you talk about microservices in particular.
+
+41
+00:02:49,060 --> 00:02:54,340
+It basically breaks down your application into granular chunks where each of these applications performs
+
+42
+00:02:54,340 --> 00:02:54,970
+as a whole.
+
+43
+00:02:56,090 --> 00:03:00,740
+But you can think of them as an individual parts, which you can basically go ahead and function or
+
+44
+00:03:00,740 --> 00:03:02,120
+operate on individually.
+
+45
+00:03:03,210 --> 00:03:08,640
+And also ensure that you can basically make changes to these individual parts individually without affecting
+
+46
+00:03:08,640 --> 00:03:10,740
+the functioning of the entire application.
+
+47
+00:03:11,400 --> 00:03:16,920
+Now when we talk about deployment and packaging, we have different ways in which these applications
+
+48
+00:03:16,920 --> 00:03:17,550
+are hosted.
+
+49
+00:03:18,710 --> 00:03:23,000
+Or in which these different ways of software development and deployment works right.
+
+50
+00:03:23,690 --> 00:03:29,360
+So when you talk about deployment, packaging your waterfall model supported or supports your physical
+
+51
+00:03:29,360 --> 00:03:31,520
+servers, you have a physical server.
+
+52
+00:03:32,660 --> 00:03:36,170
+Similarly, when you talk about your DevOps or rather, we have agile first.
+
+53
+00:03:37,300 --> 00:03:40,300
+So when you talk about how you had your virtual servers.
+
+54
+00:03:41,410 --> 00:03:46,510
+Now, if you talk about cloud computing, yes, to some extent it supports virtualization.
+
+55
+00:03:47,620 --> 00:03:50,950
+But back in those days, virtual servers were a little different.
+
+56
+00:03:52,100 --> 00:03:58,100
+So if you talk about agile model, it basically lies on a deployment model, which is based on virtual
+
+57
+00:03:58,100 --> 00:03:58,700
+servers.
+
+58
+00:03:59,600 --> 00:04:02,390
+When you talk about microservices, on the other hand.
+
+59
+00:04:03,520 --> 00:04:07,390
+They are more based on containers kind of, and deployment is what I would say.
+
+60
+00:04:08,520 --> 00:04:12,060
+Similarly, if you go ahead and discuss their application infrastructure.
+
+61
+00:04:13,140 --> 00:04:18,270
+Now for your waterfall models, we had data centers that basically had all these applications being
+
+62
+00:04:18,270 --> 00:04:18,780
+hosted.
+
+63
+00:04:19,950 --> 00:04:21,870
+Right, your monolithic applications.
+
+64
+00:04:22,990 --> 00:04:27,160
+Similarly, when you talk about agile, we mostly move to the hosted platforms, right?
+
+65
+00:04:27,820 --> 00:04:34,000
+And when you talk about current microservices or your container infrastructure, we talk about cloud
+
+66
+00:04:34,000 --> 00:04:38,830
+hosting and that is why we've come up with this session where we'd be understanding how containers work
+
+67
+00:04:38,830 --> 00:04:39,820
+on top of cloud.
+
+68
+00:04:40,960 --> 00:04:43,450
+That is your Kubernetes orchestration tool.
+
+69
+00:04:44,560 --> 00:04:48,100
+In this case would be working on our Microsoft Azure cloud platform.
+
+70
+00:04:49,170 --> 00:04:53,220
+So I believe the evolution of development and deployment clear to you all now.
+
+71
+00:04:54,310 --> 00:04:58,840
+Let us now go ahead and understand or discuss some of the other bits that are on our plate.
